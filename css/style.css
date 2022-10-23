@@ -53,16 +53,22 @@ label{
     bottom: 40px;
 } */
 
-.wrapper{
+.bg-color{
     background-color: #0000009a;
-    height: 100vh;
+    height: 1000px;
 }
 
+.frm{
+    position: relative;
+    top: 50px;
+}
 .wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 80px;
 }
 .title{
     margin-top: 30px;
@@ -90,8 +96,15 @@ input{
     padding-bottom: 5px;
     margin-top: 20px;
 }
-.btn1{
-    margin-bottom: 20px;
+.btn-1{
+    margin-bottom: -100px;
+    z-index: 1;
+}
+
+.btn-1::before{
+    width: 20px;
+    height: 20px;
+    background-color: white;
 }
 .btn2{
     width: 220px;
